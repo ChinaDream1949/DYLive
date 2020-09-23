@@ -7,65 +7,19 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--Main View Controller-->
         <scene sceneID="JQm-C4-3nw">
             <objects>
-                <tabBarController id="7Hx-T0-49l" sceneMemberID="viewController">
+                <tabBarController id="7Hx-T0-49l" customClass="MainViewController" customModule="DYLive" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qIq-R4-nyU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
-                    <connections>
-                        <segue destination="ZT3-L9-Iyx" kind="relationship" relationship="viewControllers" id="VEj-9e-UXa"/>
-                        <segue destination="LV8-2w-Qja" kind="relationship" relationship="viewControllers" id="Qym-HD-rvn"/>
-                        <segue destination="zNp-ei-C7h" kind="relationship" relationship="viewControllers" id="i3Y-Pa-QP6"/>
-                        <segue destination="4ZW-my-QNI" kind="relationship" relationship="viewControllers" id="nJI-o6-Bjs"/>
-                    </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ejd-e2-nSw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1080" y="49"/>
-        </scene>
-        <!--Home-->
-        <scene sceneID="0yh-2u-9Kj">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Home" id="ZT3-L9-Iyx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="iYQ-j7-g5q"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jfn-zP-c8N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-230" y="-273"/>
-        </scene>
-        <!--Live-->
-        <scene sceneID="oDk-iH-Ko2">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Live" id="LV8-2w-Qja" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="rPF-t6-9Ic"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="anv-gf-XXW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-238" y="-113"/>
-        </scene>
-        <!--Follow-->
-        <scene sceneID="BsI-9Q-day">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Follow" id="zNp-ei-C7h" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="RMN-Y7-887"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="62f-da-z4A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-249" y="160"/>
-        </scene>
-        <!--Profile-->
-        <scene sceneID="F7e-c9-0Fg">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Profile" id="4ZW-my-QNI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Yxk-uh-vT2"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CK5-xW-7kl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-239" y="340"/>
         </scene>
     </scenes>
 </document>
