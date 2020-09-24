@@ -22,11 +22,12 @@ class HomeViewController: UIViewController {
     
     private lazy var pageContentV : PageComtentView = {[weak self] in
         // 1.确定内容frame
-        let contenH = kScreenH - kStatusBarH - kNavigationBarH - kTitleViewH
+        let contenH = kScreenH - kStatusBarH - kNavigationBarH - kTitleViewH - kTbabbarH
         let contentFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH + kTitleViewH, width: kScreenW, height: contenH)
         // 2.确定所以子控制器
         var childVcs = [UIViewController]()
-        for _ in 0..<4 {
+        childVcs.append(ReCommendVC())
+        for _ in 0..<3 {
             let vc = UIViewController()
             vc.view.backgroundColor = UIColor(r: CGFloat(arc4random_uniform(255)), g: CGFloat(arc4random_uniform(255)), b: CGFloat(arc4random_uniform(255)))
             childVcs.append(vc)
