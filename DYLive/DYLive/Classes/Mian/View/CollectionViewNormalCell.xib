@@ -69,6 +69,12 @@
                 <constraint firstItem="awj-Hv-Aaj" firstAttribute="bottom" secondItem="o03-sh-9v6" secondAttribute="bottom" constant="-5" id="z5g-yu-llM"/>
             </constraints>
             <size key="customSize" width="169" height="116"/>
+            <connections>
+                <outlet property="iconImageView" destination="o03-sh-9v6" id="a9e-gM-R7W"/>
+                <outlet property="nickNameLab" destination="awj-Hv-Aaj" id="8VS-Sv-YsY"/>
+                <outlet property="onlineBtn" destination="ZcZ-ze-T8t" id="gA7-gt-dUc"/>
+                <outlet property="roomName" destination="XSx-0I-EXy" id="5p3-dN-uOe"/>
+            </connections>
             <point key="canvasLocation" x="223.91304347826087" y="114.50892857142857"/>
         </collectionViewCell>
     </objects>

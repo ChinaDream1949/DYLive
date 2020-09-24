@@ -116,8 +116,10 @@ extension PageTitleView {
 // MARK: - 监听点击
 extension PageTitleView {
     @objc private func titleLableTapClik(tapGes : UITapGestureRecognizer) {
-        // 1.获取当前lab下标值
+        // 0.获取当前lab下标值
         guard let currentLable = tapGes.view as? UILabel else {return}
+        // 1.如果是重复点击同一个title直接返回
+        if currentLable.tag == currentIndex { return }
         // 2.获取之前lab
         let oldLab = titleLables[currentIndex]
         // 3.切换文字颜色
