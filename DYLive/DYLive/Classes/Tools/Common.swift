@@ -7,11 +7,23 @@
 
 import UIKit
 
-let kStatusBarH : CGFloat = 20
-let kNavigationBarH : CGFloat = 74
+let kStatusBarH : CGFloat = {
+    if UIDevice.current.isiPhoneXorLater() {
+        return 24.0
+    }else{
+        return 0
+    }
+}()
+
+let kNavigationBarH : CGFloat = {
+    if UIDevice.current.isiPhoneXorLater() {
+        return 88.0
+    }else{
+        return 64
+    }
+}()
 let kTbabbarH : CGFloat = 44
 
 let kScreenW : CGFloat = UIScreen.main.bounds.size.width
 let kScreenH : CGFloat = UIScreen.main.bounds.size.height
-
 

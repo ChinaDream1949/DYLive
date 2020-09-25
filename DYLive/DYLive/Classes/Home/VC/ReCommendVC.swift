@@ -14,6 +14,7 @@ private let kPrettyItemH = kItemW * 4 / 3
 private let kHeaderViewH : CGFloat = 50
 
 private let kCycleViewH = kScreenW * 3 / 8
+private let krecomendGameH : CGFloat = 90
 
 private let kNormalCellID : String = "kNormalCellID"
 private let kPrettyCellID : String = "kPrettyCellID"
@@ -42,8 +43,14 @@ class ReCommendVC: UIViewController {
     // MARK - 懒加载属性
     private lazy var cycleView : CommendCyleView = {
         let cycleView = CommendCyleView.recommedCycleView()
-        cycleView.frame = CGRect(x: 0, y: -kCycleViewH, width: kScreenW, height: kCycleViewH)
+        cycleView.frame = CGRect(x: 0, y: -(kCycleViewH+krecomendGameH), width: kScreenW, height: kCycleViewH)
         return cycleView
+    }()
+    // MARK - 懒加载属性
+    private lazy var recommendGameV : RecommendGameView = {
+        let recommendGameview = RecommendGameView.recommendGameView()
+        recommendGameview.frame = CGRect(x: 0, y: -krecomendGameH, width: kScreenW, height: krecomendGameH)
+        return recommendGameview
     }()
     // MARK -系统回调函数
     override func viewDidLoad() {
@@ -63,8 +70,10 @@ extension ReCommendVC {
         view.addSubview(collectionView)
         // 将 cycleView 添加到collectionView
         collectionView.addSubview(cycleView)
+        // 将 recommedGameView 添加到collectionView
+        collectionView.addSubview(recommendGameV)
         // 设置collectionView 顶部内边距 (轮播图出现)
-        collectionView.contentInset = UIEdgeInsets(top: kCycleViewH, left: 0, bottom: 0, right: 0)
+        collectionView.contentInset = UIEdgeInsets(top: kCycleViewH + krecomendGameH, left: 0, bottom: 0, right: 0)
     }
 }
 // MARK 请求数据
@@ -73,6 +82,7 @@ extension ReCommendVC {
         // 请求推荐数据
         recommendVM.requesData {
             self.collectionView.reloadData()
+            self.recommendGameV.groups = self.recommendVM.anchorGroups
         }
         // 请求轮播数据
         recommendVM.requestCycleDate {
