@@ -13,6 +13,8 @@ private let kNormalItemH = kItemW * 3 / 4
 private let kPrettyItemH = kItemW * 4 / 3
 private let kHeaderViewH : CGFloat = 50
 
+private let kCycleViewH = kScreenW * 3 / 8
+
 private let kNormalCellID : String = "kNormalCellID"
 private let kPrettyCellID : String = "kPrettyCellID"
 private let kHeaderViewID : String = "kHeaderViewID"
@@ -37,6 +39,12 @@ class ReCommendVC: UIViewController {
         collectionView.register(UINib(nibName: "CollectionHeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: kHeaderViewID)
         return collectionView
     }()
+    // MARK - 懒加载属性
+    private lazy var cycleView : CommendCyleView = {
+        let cycleView = CommendCyleView.recommedCycleView()
+        cycleView.frame = CGRect(x: 0, y: -kCycleViewH, width: kScreenW, height: kCycleViewH)
+        return cycleView
+    }()
     // MARK -系统回调函数
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,15 +59,24 @@ class ReCommendVC: UIViewController {
 
 extension ReCommendVC {
     private func setupUI() {
-        
+        // 将 collectionView 添加到view
         view.addSubview(collectionView)
+        // 将 cycleView 添加到collectionView
+        collectionView.addSubview(cycleView)
+        // 设置collectionView 顶部内边距 (轮播图出现)
+        collectionView.contentInset = UIEdgeInsets(top: kCycleViewH, left: 0, bottom: 0, right: 0)
     }
 }
 // MARK 请求数据
 extension ReCommendVC {
     private func loadData() {
+        // 请求推荐数据
         recommendVM.requesData {
             self.collectionView.reloadData()
+        }
+        // 请求轮播数据
+        recommendVM.requestCycleDate {
+            self.cycleView.cycleModels = self.recommendVM.cycleModels
         }
     }
 }

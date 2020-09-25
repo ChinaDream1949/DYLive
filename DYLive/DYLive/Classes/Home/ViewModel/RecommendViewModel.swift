@@ -10,6 +10,7 @@ import UIKit
 class RecommendViewModel {
     // MRAK 懒加载属性
     lazy var anchorGroups : [AnchorGroup] = [AnchorGroup]() // 外界使用 删除 private
+    lazy var cycleModels : [CycleModel] = [CycleModel]() // 外界使用 删除 private
     private lazy var bigDateGroup : AnchorGroup = AnchorGroup()
     private lazy var prettyGroup : AnchorGroup = AnchorGroup()
 }
@@ -77,6 +78,23 @@ extension RecommendViewModel {
             print("所有的任务执行完了")
             self.anchorGroups.insert(self.prettyGroup, at: 0)
             self.anchorGroups.insert(self.bigDateGroup, at: 0)
+            finishedCallBack()
+        }
+    }
+    
+    
+    /// 请求轮播数据
+    func requestCycleDate(finishedCallBack : @escaping () -> ()){
+        NetworkTools.requestData(.get, URLString: "http://capi.douyucdn.cn/api/v1/slide/6", parameters: ["version":"2.300"]) { (result) in
+            // 1.先将 result 转成字典
+            guard let resultDict = result as? [String : NSObject] else { return }
+            // 2.根据 resultDict 获取数组
+            guard let dataArray = resultDict["data"] as? [[String : NSObject]] else { return }
+            // 3.遍历数组,获取字典，并且转成模型对象
+            for dict in dataArray {
+                let group = CycleModel(dict: dict)
+                self.cycleModels.append(group)
+            }
             finishedCallBack()
         }
     }

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CommendCyleView" customModule="DYLive" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="TBE-jg-OBw">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="fRt-LS-Dj8">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="p0Y-RJ-2gv"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="sKr-FO-4l1"/>
+                    </connections>
+                </collectionView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="aGo-kn-G3g">
+                    <rect key="frame" x="252" y="122" width="123" height="28"/>
+                    <color key="pageIndicatorTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="currentPageIndicatorTintColor" red="0.7197133899" green="0.28439840669999999" blue="0.12934407589999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="TBE-jg-OBw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="5BX-ge-8bz"/>
+                <constraint firstAttribute="trailing" secondItem="TBE-jg-OBw" secondAttribute="trailing" id="6Tu-7g-7A6"/>
+                <constraint firstAttribute="bottom" secondItem="TBE-jg-OBw" secondAttribute="bottom" id="Lr5-8e-jvG"/>
+                <constraint firstItem="TBE-jg-OBw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ixs-Ne-0Dw"/>
+                <constraint firstAttribute="bottom" secondItem="aGo-kn-G3g" secondAttribute="bottom" id="oZk-mt-D7d"/>
+                <constraint firstAttribute="trailing" secondItem="aGo-kn-G3g" secondAttribute="trailing" id="vax-qc-zHG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collcetionView" destination="TBE-jg-OBw" id="hTl-33-zBN"/>
+                <outlet property="pageControlView" destination="aGo-kn-G3g" id="bDD-PS-VU4"/>
+            </connections>
+            <point key="canvasLocation" x="207" y="-105"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
