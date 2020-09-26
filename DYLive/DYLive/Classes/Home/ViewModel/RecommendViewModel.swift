@@ -7,9 +7,8 @@
 
 import UIKit
 
-class RecommendViewModel {
+class RecommendViewModel : BaseViewModel{
     // MRAK 懒加载属性
-    lazy var anchorGroups : [AnchorGroup] = [AnchorGroup]() // 外界使用 删除 private
     lazy var cycleModels : [CycleModel] = [CycleModel]() // 外界使用 删除 private
     private lazy var bigDateGroup : AnchorGroup = AnchorGroup()
     private lazy var prettyGroup : AnchorGroup = AnchorGroup()
@@ -58,20 +57,9 @@ extension RecommendViewModel {
         }
         // 3.请求后面部分的游戏数据
         groupDis.enter()
-        NetworkTools.requestData(.get, URLString: "http://capi.douyucdn.cn/api/v1/getHotCate", parameters: ["limit":"4","offset":"0","time":NSDate.getCurrentTime]) { (result) in
-//            print(result)
-            // 1.先将 result 转成字典
-            guard let resultDict = result as? [String : NSObject] else { return }
-            // 2.根据 resultDict 获取数组
-            guard let dataArray = resultDict["data"] as? [[String : NSObject]] else { return }
-            // 3.遍历数组,获取字典，并且转成模型对象
-            for dict in dataArray {
-                let group = AnchorGroup(dict: dict)
-                self.anchorGroups.append(group)
-                print("\(group.icon_name)")
-            }
+
+        loadAnchorData(isGroupData: true,URLString: "http://capi.douyucdn.cn/api/v1/getHotCate", parameters: ["limit":"4","offset":"0","time":NSDate.getCurrentTime]) {
             groupDis.leave()
-            print("请求完成2-12组数据")
         }
         // 6.所有数据请求完成 ， 之后排序
         groupDis.notify(queue: .main) {

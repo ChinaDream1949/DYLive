@@ -13,7 +13,7 @@ class HomeViewController: UIViewController {
     // MARK: - 懒加载属性
     private lazy var pageTitleView : PageTitleView = {
         let titleFrame = CGRect(x: 0, y: kStatusBarH+kNavigationBarH, width: kScreenW, height: kTitleViewH)
-        let titles = ["推荐","新闻","体育","趣玩"]
+        let titles = ["推荐","游戏","娱乐","趣玩"]
         let titleView = PageTitleView(frame: titleFrame, titles: titles)
         titleView.backgroundColor = UIColor.white
         titleView.delegate = self
@@ -27,12 +27,10 @@ class HomeViewController: UIViewController {
         // 2.确定所以子控制器
         var childVcs = [UIViewController]()
         childVcs.append(ReCommendVC())
-        for _ in 0..<3 {
-            let vc = UIViewController()
-            vc.view.backgroundColor = UIColor(r: CGFloat(arc4random_uniform(255)), g: CGFloat(arc4random_uniform(255)), b: CGFloat(arc4random_uniform(255)))
-            childVcs.append(vc)
-            
-        }
+        childVcs.append(GameVController())
+        childVcs.append(EntertainmentVC())
+        childVcs.append(FunToPlayVC())
+    
         let contentV = PageComtentView(frame: contentFrame, childVC: childVcs, parentViewController: self)
         contentV.delegate = self
         return contentV

@@ -17,7 +17,7 @@ let kStatusBarH : CGFloat = {
 
 let kNavigationBarH : CGFloat = {
     if UIDevice.current.isiPhoneXorLater() {
-        return 88.0
+        return 68.0
     }else{
         return 64
     }

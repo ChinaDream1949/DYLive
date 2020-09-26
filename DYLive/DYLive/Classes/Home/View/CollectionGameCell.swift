@@ -9,10 +9,10 @@ import UIKit
 
 class CollectionGameCell: UICollectionViewCell {
 
-    var group : AnchorGroup? {
+    var baseModel : BaseGameModel? {
         didSet{
-            titleLab.text = group?.tag_name
-            let url = URL(string: "\(group?.icon_url ?? "")")
+            titleLab.text = baseModel?.tag_name
+            let url = URL(string: "\(baseModel?.icon_url ?? "")")
 //            iconImageView.kf.setImage(with: url)
             iconImageView.kf.setImage(with: url, placeholder: UIImage(named: "home_more_btn"), options: nil, progressBlock: nil, completionHandler: nil)
         }

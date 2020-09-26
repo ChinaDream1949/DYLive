@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AnchorModel: NSObject {
+class AnchorModel: BaseGameModel {
     // 房间号
     @objc var room_id : Int = 0
     // 房间图片
@@ -23,9 +23,4 @@ class AnchorModel: NSObject {
     // 所在城市
     @objc var anchor_city : String = ""
     
-    init(dict : [String : NSObject]) {
-        super.init()
-        setValuesForKeys(dict)
-    }
-    override func setValue(_ value: Any?, forUndefinedKey key: String) {} // 防止报错
 }

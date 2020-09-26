@@ -12,15 +12,8 @@ private let kEdgMragin : CGFloat = 10
 
 class RecommendGameView: UIView {
     // 定义数据属性
-    var groups : [AnchorGroup]? {
+    var groups : [BaseGameModel]? {
         didSet{
-            groups?.removeFirst()
-            groups?.removeFirst()//删除前两组数据
-            // 添加更多
-            let moreGroup = AnchorGroup()
-            moreGroup.tag_name = "更多"
-            groups?.append(moreGroup)
-            
             collectionView.reloadData()
         }
     }
@@ -48,7 +41,7 @@ extension RecommendGameView : UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kGmaeCellID, for: indexPath) as! CollectionGameCell
-        cell.group = groups![indexPath.item]
+        cell.baseModel = groups![indexPath.item]
         return cell
     }
     
