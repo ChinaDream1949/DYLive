@@ -56,6 +56,7 @@
 		D012A6E2251F6F4B0053D32A /* RoomShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D012A6E1251F6F4B0053D32A /* RoomShowViewController.swift */; };
 		D012A6EA251F6F6D0053D32A /* RoomNoramlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D012A6E9251F6F6D0053D32A /* RoomNoramlViewController.swift */; };
 		D012A6EF251F73760053D32A /* CustomNavgationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D012A6EE251F73760053D32A /* CustomNavgationController.swift */; };
+		D0135AFF2569843A00C5BBEB /* DYLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0135AFE2569843A00C5BBEB /* DYLiveViewController.swift */; };
 		D05CFE6A251DA23E00B86D33 /* CommendCyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05CFE69251DA23E00B86D33 /* CommendCyleView.swift */; };
 		D05CFE6F251DA25A00B86D33 /* CommendCyleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D05CFE6E251DA25A00B86D33 /* CommendCyleView.xib */; };
 		D05CFE74251DB85600B86D33 /* CycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05CFE73251DB85600B86D33 /* CycleModel.swift */; };
@@ -145,6 +146,7 @@
 		D012A6E1251F6F4B0053D32A /* RoomShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomShowViewController.swift; sourceTree = "<group>"; };
 		D012A6E9251F6F6D0053D32A /* RoomNoramlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomNoramlViewController.swift; sourceTree = "<group>"; };
 		D012A6EE251F73760053D32A /* CustomNavgationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavgationController.swift; sourceTree = "<group>"; };
+		D0135AFE2569843A00C5BBEB /* DYLiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYLiveViewController.swift; sourceTree = "<group>"; };
 		D05CFE69251DA23E00B86D33 /* CommendCyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommendCyleView.swift; sourceTree = "<group>"; };
 		D05CFE6E251DA25A00B86D33 /* CommendCyleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommendCyleView.xib; sourceTree = "<group>"; };
 		D05CFE73251DB85600B86D33 /* CycleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleModel.swift; sourceTree = "<group>"; };
@@ -320,7 +322,7 @@
 		D00DEAB8251B316B007BE78C /* Live */ = {
 			isa = PBXGroup;
 			children = (
-				D00DEAB9251B316B007BE78C /* Live.storyboard */,
+				D0135B032569844200C5BBEB /* VC */,
 			);
 			path = Live;
 			sourceTree = "<group>";
@@ -463,6 +465,15 @@
 			children = (
 				D012A6E1251F6F4B0053D32A /* RoomShowViewController.swift */,
 				D012A6E9251F6F6D0053D32A /* RoomNoramlViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		D0135B032569844200C5BBEB /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				D00DEAB9251B316B007BE78C /* Live.storyboard */,
+				D0135AFE2569843A00C5BBEB /* DYLiveViewController.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -639,6 +650,7 @@
 				D012A6D1251F59520053D32A /* FunnyViewModel.swift in Sources */,
 				D012A6C0251F4AC20053D32A /* AmuseMenuViewCell.swift in Sources */,
 				D0013AB6251CA7B500ACD105 /* NetworkTools.swift in Sources */,
+				D0135AFF2569843A00C5BBEB /* DYLiveViewController.swift in Sources */,
 				D00DEAEA251B41F4007BE78C /* PageTitleView.swift in Sources */,
 				D012A6C6251F53690053D32A /* FunToPlayVC.swift in Sources */,
 				D012A6E2251F6F4B0053D32A /* RoomShowViewController.swift in Sources */,
