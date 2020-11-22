@@ -26,4 +26,5 @@ let kTbabbarH : CGFloat = 44
 
 let kScreenW : CGFloat = UIScreen.main.bounds.size.width
 let kScreenH : CGFloat = UIScreen.main.bounds.size.height
-
+let screenFrame:CGRect = UIScreen.main.bounds
+let StatusBarTouchBeginNotification:String = "StatusBarTouchBeginNotification"

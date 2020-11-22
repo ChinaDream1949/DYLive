@@ -57,6 +57,16 @@
 		D012A6EA251F6F6D0053D32A /* RoomNoramlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D012A6E9251F6F6D0053D32A /* RoomNoramlViewController.swift */; };
 		D012A6EF251F73760053D32A /* CustomNavgationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D012A6EE251F73760053D32A /* CustomNavgationController.swift */; };
 		D0135AFF2569843A00C5BBEB /* DYLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0135AFE2569843A00C5BBEB /* DYLiveViewController.swift */; };
+		D0135B1D25699B8B00C5BBEB /* DYVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0135B1B25699B8B00C5BBEB /* DYVideoCell.swift */; };
+		D0135B1E25699B8B00C5BBEB /* DYVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0135B1C25699B8B00C5BBEB /* DYVideoCell.xib */; };
+		D0135B2325699C3C00C5BBEB /* DYLiveAmuseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0135B2225699C3C00C5BBEB /* DYLiveAmuseView.swift */; };
+		D0135B2825699C6800C5BBEB /* DYLiveAmuseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0135B2725699C6800C5BBEB /* DYLiveAmuseView.xib */; };
+		D03C71912569C1F4009F775E /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03C71902569C1F4009F775E /* UIHelper.swift */; };
+		D03C71962569CC1E009F775E /* ScaleAnimatorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03C71952569CC1E009F775E /* ScaleAnimatorButton.swift */; };
+		D03C719C2569D484009F775E /* AVPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03C719B2569D484009F775E /* AVPlayerView.swift */; };
+		D03C71A12569D4C5009F775E /* AVPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03C71A02569D4C5009F775E /* AVPlayerManager.swift */; };
+		D03C71A72569D5D0009F775E /* WebCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03C71A62569D5D0009F775E /* WebCacheManager.swift */; };
+		D03C71AC2569D630009F775E /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03C71AB2569D630009F775E /* String+.swift */; };
 		D05CFE6A251DA23E00B86D33 /* CommendCyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05CFE69251DA23E00B86D33 /* CommendCyleView.swift */; };
 		D05CFE6F251DA25A00B86D33 /* CommendCyleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D05CFE6E251DA25A00B86D33 /* CommendCyleView.xib */; };
 		D05CFE74251DB85600B86D33 /* CycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05CFE73251DB85600B86D33 /* CycleModel.swift */; };
@@ -147,6 +157,16 @@
 		D012A6E9251F6F6D0053D32A /* RoomNoramlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomNoramlViewController.swift; sourceTree = "<group>"; };
 		D012A6EE251F73760053D32A /* CustomNavgationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavgationController.swift; sourceTree = "<group>"; };
 		D0135AFE2569843A00C5BBEB /* DYLiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYLiveViewController.swift; sourceTree = "<group>"; };
+		D0135B1B25699B8B00C5BBEB /* DYVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYVideoCell.swift; sourceTree = "<group>"; };
+		D0135B1C25699B8B00C5BBEB /* DYVideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DYVideoCell.xib; sourceTree = "<group>"; };
+		D0135B2225699C3C00C5BBEB /* DYLiveAmuseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYLiveAmuseView.swift; sourceTree = "<group>"; };
+		D0135B2725699C6800C5BBEB /* DYLiveAmuseView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DYLiveAmuseView.xib; sourceTree = "<group>"; };
+		D03C71902569C1F4009F775E /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		D03C71952569CC1E009F775E /* ScaleAnimatorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleAnimatorButton.swift; sourceTree = "<group>"; };
+		D03C719B2569D484009F775E /* AVPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerView.swift; sourceTree = "<group>"; };
+		D03C71A02569D4C5009F775E /* AVPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerManager.swift; sourceTree = "<group>"; };
+		D03C71A62569D5D0009F775E /* WebCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebCacheManager.swift; sourceTree = "<group>"; };
+		D03C71AB2569D630009F775E /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		D05CFE69251DA23E00B86D33 /* CommendCyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommendCyleView.swift; sourceTree = "<group>"; };
 		D05CFE6E251DA25A00B86D33 /* CommendCyleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommendCyleView.xib; sourceTree = "<group>"; };
 		D05CFE73251DB85600B86D33 /* CycleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleModel.swift; sourceTree = "<group>"; };
@@ -322,6 +342,8 @@
 		D00DEAB8251B316B007BE78C /* Live */ = {
 			isa = PBXGroup;
 			children = (
+				D03C71A52569D5C1009F775E /* WebCache */,
+				D0135B1A25699B7E00C5BBEB /* View */,
 				D0135B032569844200C5BBEB /* VC */,
 			);
 			path = Live;
@@ -424,6 +446,9 @@
 				D00DEAFC251B5511007BE78C /* UIColor-Extension.swift */,
 				D0013AC3251CAF8900ACD105 /* Foundation-Extension.swift */,
 				D05CFE96251DD59800B86D33 /* UIDevice-Extension.swift */,
+				D03C71902569C1F4009F775E /* UIHelper.swift */,
+				D03C71952569CC1E009F775E /* ScaleAnimatorButton.swift */,
+				D03C71AB2569D630009F775E /* String+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -476,6 +501,35 @@
 				D0135AFE2569843A00C5BBEB /* DYLiveViewController.swift */,
 			);
 			path = VC;
+			sourceTree = "<group>";
+		};
+		D0135B1A25699B7E00C5BBEB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D03C719A2569D462009F775E /* AVplayer */,
+				D0135B2225699C3C00C5BBEB /* DYLiveAmuseView.swift */,
+				D0135B2725699C6800C5BBEB /* DYLiveAmuseView.xib */,
+				D0135B1B25699B8B00C5BBEB /* DYVideoCell.swift */,
+				D0135B1C25699B8B00C5BBEB /* DYVideoCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D03C719A2569D462009F775E /* AVplayer */ = {
+			isa = PBXGroup;
+			children = (
+				D03C719B2569D484009F775E /* AVPlayerView.swift */,
+				D03C71A02569D4C5009F775E /* AVPlayerManager.swift */,
+			);
+			path = AVplayer;
+			sourceTree = "<group>";
+		};
+		D03C71A52569D5C1009F775E /* WebCache */ = {
+			isa = PBXGroup;
+			children = (
+				D03C71A62569D5D0009F775E /* WebCacheManager.swift */,
+			);
+			path = WebCache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -591,9 +645,11 @@
 				D0013A97251C94D300ACD105 /* CollectionViewNormalCell.xib in Resources */,
 				D00DEA84251B311C007BE78C /* Assets.xcassets in Resources */,
 				D05CFE8C251DCD9300B86D33 /* CollectionGameCell.xib in Resources */,
+				D0135B2825699C6800C5BBEB /* DYLiveAmuseView.xib in Resources */,
 				D012A6BA251F442D0053D32A /* AmuseMenuView.xib in Resources */,
 				D0013A9E251C98A900ACD105 /* CollectionPrettyCell.xib in Resources */,
 				D05CFE7B251DBC1A00B86D33 /* CollectionCycleCell.xib in Resources */,
+				D0135B1E25699B8B00C5BBEB /* DYVideoCell.xib in Resources */,
 				D00DEABC251B316B007BE78C /* Home.storyboard in Resources */,
 				D05CFE6F251DA25A00B86D33 /* CommendCyleView.xib in Resources */,
 				D05CFE85251DC6DB00B86D33 /* RecommendGameView.xib in Resources */,
@@ -651,6 +707,7 @@
 				D012A6C0251F4AC20053D32A /* AmuseMenuViewCell.swift in Sources */,
 				D0013AB6251CA7B500ACD105 /* NetworkTools.swift in Sources */,
 				D0135AFF2569843A00C5BBEB /* DYLiveViewController.swift in Sources */,
+				D0135B1D25699B8B00C5BBEB /* DYVideoCell.swift in Sources */,
 				D00DEAEA251B41F4007BE78C /* PageTitleView.swift in Sources */,
 				D012A6C6251F53690053D32A /* FunToPlayVC.swift in Sources */,
 				D012A6E2251F6F4B0053D32A /* RoomShowViewController.swift in Sources */,
@@ -658,33 +715,40 @@
 				D0013A89251C86EE00ACD105 /* ReCommendVC.swift in Sources */,
 				D05CFE80251DC6D100B86D33 /* RecommendGameView.swift in Sources */,
 				D012A690251F20840053D32A /* GameModel.swift in Sources */,
+				D03C71AC2569D630009F775E /* String+.swift in Sources */,
 				D00DEAE5251B3C09007BE78C /* UIBarButtonItem-Extension.swift in Sources */,
 				D012A6B5251F44140053D32A /* AmuseMenuView.swift in Sources */,
 				D012A69D251F30500053D32A /* EntertainmentVC.swift in Sources */,
 				D012A695251F21820053D32A /* BaseGameModel.swift in Sources */,
 				D00DEAF8251B5263007BE78C /* PageComtentView.swift in Sources */,
 				D05CFE74251DB85600B86D33 /* CycleModel.swift in Sources */,
+				D03C719C2569D484009F775E /* AVPlayerView.swift in Sources */,
 				D05CFE97251DD59800B86D33 /* UIDevice-Extension.swift in Sources */,
 				D012A68B251F1E580053D32A /* GameViewModel.swift in Sources */,
 				D0013AC4251CAF8900ACD105 /* Foundation-Extension.swift in Sources */,
 				D0013A96251C94D300ACD105 /* CollectionViewNormalCell.swift in Sources */,
 				D00DEACE251B33CD007BE78C /* MainViewController.swift in Sources */,
+				D03C71912569C1F4009F775E /* UIHelper.swift in Sources */,
 				D0013AC9251CB3C000ACD105 /* AnchorGroup.swift in Sources */,
+				D03C71962569CC1E009F775E /* ScaleAnimatorButton.swift in Sources */,
 				D012A6EA251F6F6D0053D32A /* RoomNoramlViewController.swift in Sources */,
 				D00DEAFD251B5511007BE78C /* UIColor-Extension.swift in Sources */,
 				D05CFE6A251DA23E00B86D33 /* CommendCyleView.swift in Sources */,
 				D00DEA7B251B311A007BE78C /* AppDelegate.swift in Sources */,
+				D03C71A12569D4C5009F775E /* AVPlayerManager.swift in Sources */,
 				D012A6D9251F66130053D32A /* BaseAnimationVController.swift in Sources */,
 				D06FC43A251D046900602504 /* CollectionBaseCell.swift in Sources */,
 				D012A6B0251F39DF0053D32A /* BaseAnchorViewController.swift in Sources */,
 				D012A6A8251F37120053D32A /* BaseViewModel.swift in Sources */,
 				D00DEA7D251B311A007BE78C /* SceneDelegate.swift in Sources */,
+				D03C71A72569D5D0009F775E /* WebCacheManager.swift in Sources */,
 				D05CFE8B251DCD9300B86D33 /* CollectionGameCell.swift in Sources */,
 				D012A6EF251F73760053D32A /* CustomNavgationController.swift in Sources */,
 				D0013A9D251C98A900ACD105 /* CollectionPrettyCell.swift in Sources */,
 				D012A686251F17E30053D32A /* GameVController.swift in Sources */,
 				D00DEAD9251B3749007BE78C /* HomeViewController.swift in Sources */,
 				D0013ABF251CABCD00ACD105 /* RecommendViewModel.swift in Sources */,
+				D0135B2325699C3C00C5BBEB /* DYLiveAmuseView.swift in Sources */,
 				D0013ADF251CE67800ACD105 /* AnchorModel.swift in Sources */,
 				D05CFE7A251DBC1A00B86D33 /* CollectionCycleCell.swift in Sources */,
 				D012A6A2251F32F70053D32A /* AmuseViewModel.swift in Sources */,
